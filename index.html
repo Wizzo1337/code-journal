@@ -12,12 +12,64 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Noto+Sans+JP:wght@100;400&display=swap"
+    rel="stylesheet">
 </head>
 <body>
   <header>
+    <div class="header headingText">
+        <div>Code Journal</div>
+    </div>
   </header>
-  <main>
-    <div data-view="edit-profile"></div>
+  <main class="container bodyText">
+    <form>
+      <div data-view="edit-profile">
+        <div class="row titleFont">
+          <div class="alignPadding">Edit Profile</div>
+        </div>
+        <div class="row">
+          <div id="profileForm">
+            <div class="column-half">
+              <img src="images/placeholder-image-square.jpg">
+            </div>
+            <div class="column-half">
+              <div class="row input-container">
+                <label for="image">Avatar URL</label>
+                <div class="input-div">
+                  <input name="avatarUrl" required class="box" id="image" type="text">
+                </div>
+                <label for="username">Username</label>
+                <div class="input-div">
+                  <input name="username" required class="box" id="username" type="text">
+                </div>
+                <label for="fullName">Full Name</label>
+                <div class="input-div">
+                  <input name="fullName" required class="box" id="fullName" type="text">
+                </div>
+                <label for="location">Location</label>
+                <div class="input-div">
+                  <input name="location" required class="box" id="location" type="text">
+                </div>
+              </div>
+            </div>
+            </div>
+              <div class="column-full">
+                <div class="alignPadding">
+                  <label for="bio">Bio</label>
+                </div>
+                <div class="alignPadding">
+                  <textarea name="bio" class="boxBio" id="bio"></textarea>
+                </div>
+                <div>
+                  <input required class="submit" type="submit" value="SAVE" />
+                </div>
+          </div>
+        </div>
+      </div>
+    </form>
   </main>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
