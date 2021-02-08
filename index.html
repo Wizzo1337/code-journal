@@ -26,14 +26,14 @@
   </header>
   <main class="container bodyText">
     <form>
-      <div data-view="edit-profile">
+      <div data-view="edit-profile" class="hidden">
         <div class="row titleFont">
           <div class="alignPadding">Edit Profile</div>
         </div>
         <div class="row">
-          <div id="profileForm">
+          <div class="profileForm">
             <div class="column-half">
-              <img src="images/placeholder-image-square.jpg">
+              <img class="placeholder" src="images/placeholder-image-square.jpg">
             </div>
             <div class="column-half">
               <div class="row input-container">
@@ -66,6 +66,31 @@
                 <div>
                   <input required class="submit" type="submit" value="SAVE" />
                 </div>
+          </div>
+        </div>
+      </div>
+      <div data-view="profile">
+        <div class="row titleFont">
+          <div class="alignPadding">Name Goes Here</div>
+        </div>
+        <div class="row">
+          <div class="profileForm">
+            <div class="column-half">
+              <img class="placeholder" src="images/placeholder-image-square.jpg">
+            </div>
+            <div class="column-half">
+              <div class="row">
+                <img class="icon-resize-and-position" src="images/username-icon.png"/>
+                <p class="text-and-icon-spacing">Username goes here</p>
+              </div>
+              <div class="row">
+                <img class="icon-resize-and-position" src="images/location.png" />
+                <p class="text-and-icon-spacing">Location goes here</p>
+              </div>
+              <div class="row">
+                <p>A lot of bio goes here.A lot of bio goes here.A lot of bio goes here.A lot of bio goes here.A lot of bio goes here.A lot of bio goes here.A lot of bio goes here.A lot of bio goes here.A lot of bio goes here.A lot of bio goes here.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

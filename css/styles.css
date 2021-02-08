@@ -52,7 +52,7 @@ textarea {
   height: 200px;
 }
 
-img {
+.placeholder {
   width: 100%;
 }
 
@@ -60,7 +60,7 @@ img {
   margin-left: 93%;
 }
 
-#profileForm {
+.profileForm {
   display: flex;
   flex-wrap: wrap;
 }
@@ -76,6 +76,16 @@ label {
 
 .input-div {
   width: 100%;
+}
+
+.icon-resize-and-position {
+  width: 30px;
+  height: 30px;
+  margin-top: 15px;
+}
+
+.text-and-icon-spacing {
+  margin-left: 15px;
 }
 
 @media screen and (max-width: 768px) {
